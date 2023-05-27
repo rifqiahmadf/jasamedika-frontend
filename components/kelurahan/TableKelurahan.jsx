@@ -18,8 +18,24 @@ export default function TableKelurahan({
   apiRef,
 }) {
   const columns = [
-    { field: "Nama_Kelurahan", headerName: "Nama Kelurahan", disableColumnMenu: true, minWidth: 150 },
-    { field: "Nama_Kecamatan", headerName: "Nama Kecamatan", disableColumnMenu: true, minWidth: 150 },
+    {
+      field: "id",
+      headerName: "ID Kelurahan",
+      disableColumnMenu: true,
+      minWidth: 150,
+    },
+    {
+      field: "Nama_Kelurahan",
+      headerName: "Nama Kelurahan",
+      disableColumnMenu: true,
+      minWidth: 150,
+    },
+    {
+      field: "Nama_Kecamatan",
+      headerName: "Nama Kecamatan",
+      disableColumnMenu: true,
+      minWidth: 150,
+    },
     {
       field: "Nama_Kota",
       headerName: "Nama Kota",

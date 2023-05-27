@@ -31,12 +31,20 @@ export default function DetailKelurahan({ open, handleClose, currentData }) {
             <Table>
               <TableBody>
                 <TableRow>
+                  <TableCell align="left">ID Kelurahan</TableCell>
+                  <TableCell align="left">{currentData?.id}</TableCell>
+                </TableRow>
+                <TableRow>
                   <TableCell align="left">Nama Kelurahan</TableCell>
-                  <TableCell align="left">{currentData?.Nama_Kelurahan}</TableCell>
+                  <TableCell align="left">
+                    {currentData?.Nama_Kelurahan}
+                  </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell align="left">Nama Kecamatan</TableCell>
-                  <TableCell align="left">{currentData?.Nama_Kecamatan}</TableCell>
+                  <TableCell align="left">
+                    {currentData?.Nama_Kecamatan}
+                  </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell align="left">Nama Kota</TableCell>
