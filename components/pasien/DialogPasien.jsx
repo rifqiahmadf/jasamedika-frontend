@@ -6,11 +6,11 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 
-export default function DialogKelurahan({
+export default function DialogPasien({
   open,
   handleClose,
   currentData,
-  handleDeleteKelurahan,
+  handleDeletePasien,
 }) {
   return (
     <>
@@ -21,16 +21,16 @@ export default function DialogKelurahan({
         aria-describedby="alert-dialog-description"
       >
         <DialogTitle id="alert-dialog-title">
-          {"Hapus data kelurahan?"}
+          {"Hapus data pasien?"}
         </DialogTitle>
         <DialogContent>
-          <DialogContentText id="alert-dialog-description">{`Anda akan menghapus kelurahan ${currentData?.Nama_Kelurahan}`}</DialogContentText>
+          <DialogContentText id="alert-dialog-description">{`Anda akan menghapus pasien ${currentData?.Nama_Pasien}`}</DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Batal</Button>
           <Button
             onClick={() => {
-              handleDeleteKelurahan(currentData?.id);
+              handleDeletePasien(currentData?.ID_Pasien);
               handleClose();
             }}
             autoFocus
